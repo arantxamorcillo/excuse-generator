@@ -17,11 +17,10 @@ window.onload = function() {
     "while I was praying"
   ];
   var randomItem = function(parts) {
-    for (let i = 0; i < parts.length; i++) {
-      let randomIndex = Math.floor(Math.random() * parts.length);
-      return parts[randomIndex];
-    }
+    let randomIndex = Math.floor(Math.random() * parts.length);
+    return parts[randomIndex];
   };
+
   const excuse = function(subject, verb, object, time) {
     return (
       randomItem(subject) +
